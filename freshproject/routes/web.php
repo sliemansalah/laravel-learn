@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\PostController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -44,3 +46,32 @@ Route::get('/getName', function () { // http://localhost:8000/getName?name=sliem
     $name = request('name');
     return $name;
 });
+
+
+//Route::get('/posts/{post}', function ($post) {
+//    $posts= [
+//      'my-first-post' => 'Hello, this is my first blog post',
+//        'my-second-post' => 'Now I am getting the hang of this blogging'
+//    ];
+//
+////    if(! array_key_exists($post, $posts)) {
+////        abort(404, 'Sorry, that post was not found'); // other way
+////    }
+//
+////    if(! array_key_exists($post, $posts)) {
+//////       return 'Not found'; // other way
+////        return view('welcome');
+////    }
+//
+//
+//    return view('post', [
+//        'post' => $posts[$post] ?? 'Nothing here yet' //http://localhost:8000/posts/my-first-post
+//    ]);
+//});
+
+
+//Route::get('/posts/{post}', 'PostController@show');
+//Route::get('/posts/{post}', 'PostController@show'); // in previous verison
+Route::get('/posts/{post}', [PostController::class, 'show']); // for now
+
+

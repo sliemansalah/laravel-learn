@@ -9,5 +9,7 @@ composer gloabal require laravel/installer
 laravel new freshproject -> create project.
 php artisan server -> run project
 ===============================================================================
+php artisan -> to show all commands
 
+php artisan make:controller [PostController]
 

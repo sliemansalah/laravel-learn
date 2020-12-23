@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc470be2-729b-4449-8af3-513f914a3d1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/freshproject/resources/views/test.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/freshproject/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/freshproject/resources/views/post.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freshproject/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/freshproject/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/comments.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/freshproject/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/freshproject/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +41,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608740900942</updated>
-      <workItem from="1608740902092" duration="2188000" />
+      <workItem from="1608740902092" duration="3620000" />
     </task>
     <servers />
   </component>
