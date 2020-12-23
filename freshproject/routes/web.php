@@ -14,5 +14,33 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('index');
+});
+
+Route::get('/welcome', function () {
     return view('welcome');
+});
+
+Route::get('/json', function () {
+    return ['foo' => 'bar'];
+});
+
+//Route::get('/test', function () {
+//    $name = request('name'); // http://localhost:8000/test?name=slieman
+//    return view('test', [
+//        'name' => $name
+//    ]);
+//});
+Route::get('/test', function () {
+    return view('test', [
+        'name' => request('name')
+    ]);
+});
+
+
+// http://localhost:8000/test?name=%3Cscript%3Ealert(%22hello%22)%3C/script%3E
+
+Route::get('/getName', function () { // http://localhost:8000/getName?name=slieman
+    $name = request('name');
+    return $name;
 });
