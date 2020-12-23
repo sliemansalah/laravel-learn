@@ -1,0 +1,13 @@
+===============================================================================
+* php -v : for version of php.
+* https://brew.sh/ -> home brow: for linux for searching about php, mysql
+* composer: for dependancies -> packages.
+* php storm: editor.
+===============================================================================
+laravel installation:
+composer gloabal require laravel/installer
+laravel new freshproject -> create project.
+php artisan server -> run project
+===============================================================================
+
+
